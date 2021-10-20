@@ -11,10 +11,12 @@ const togglePopupCall = () => {
     overlay.addEventListener('click', (event) => {
         let target = event.target;
         if (target.classList.contains('header-modal__close')) {
+            headerModal.style.display = 'none';
             overlay.style.display = 'none';
         } else {
-            target = target.closest('.overlay');
-            if (target) {
+            target = target.closest('.header-modal');
+            if (!target) {
+                headerModal.style.display = 'none';
                 overlay.style.display = 'none';
             }
         }
