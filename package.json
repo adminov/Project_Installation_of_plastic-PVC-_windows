@@ -1,11 +1,10 @@
 {
   "name": "middle_diplom",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^5.59.0",
+    "webpack": "^5.59.1",
     "webpack-cli": "^4.9.1"
   },
   "scripts": {
@@ -13,5 +12,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adminov/Project_Installation_of_plastic-PVC-_windows.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adminov/Project_Installation_of_plastic-PVC-_windows/issues"
+  },
+  "homepage": "https://github.com/adminov/Project_Installation_of_plastic-PVC-_windows#readme",
+  "description": ""
 }
