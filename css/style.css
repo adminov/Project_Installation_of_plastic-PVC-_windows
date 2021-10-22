@@ -1530,34 +1530,37 @@ input.error {
 .potolki .order {
   background: url(../images/order5-bg.jpg) no-repeat center;
 }
-.header-modal {
-  display: none;
-}
+/*.header-modal {*/
+/*  display: none;*/
+/*}*/
 
-.services-modal {
-  display: none;
-}
+/*.services-modal {*/
+/*  display: none;*/
+/*}*/
 
 .services-modal--opened {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
+  width: 40rem;
+  left: 30%;
+  top: 10%;
+  transform: translateX(-50px);
+  padding: 2rem 6rem;
 }
 
 .header-modal--opened {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
+  width: 40rem;
+  left: 30%;
+  top: 10%;
+  -webkit-transform: translateX(-50px);
+  transform: translateX(-50px);
+  padding: 2rem 6rem;
 }
 
 .header-modal__close {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 30px;
+  right: -230px;
   font-size: 36px;
   cursor: pointer;
 }
@@ -1568,8 +1571,8 @@ input.error {
 
 .services-modal__close {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 30px;
+  right: -230px;
   font-size: 36px;
   cursor: pointer;
 }
@@ -1581,25 +1584,25 @@ input.error {
 .overlay {
   display: none;
   position: fixed;
+  left: 0;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0,0,0,.5);
 }
 
 .overlayTwo {
   display: none;
   position: fixed;
+  left: 0;
   top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,.5);
 }
 
 .benefits-wrap {
