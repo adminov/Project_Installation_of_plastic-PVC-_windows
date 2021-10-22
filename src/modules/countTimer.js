@@ -1,4 +1,4 @@
-const countTimer = (deadLine = '22 October 2021') => {
+const countTimer = (deadLine = '25 October 2021') => {
     const timeDay = document.querySelectorAll('.count_1 span'),
         timeHours = document.querySelectorAll('.count_2 span'),
         timeMinutes = document.querySelectorAll('.count_3 span'),
@@ -36,13 +36,22 @@ const countTimer = (deadLine = '22 October 2021') => {
             });
         } else {
             clearInterval(interval);
-            timeDay.textContent = '00';
-            timeHours.textContent = '00';
-            timeMinutes.textContent = '00';
-            timeSeconds.textContent = '00';
+            timeDay.forEach((elem) => {
+                elem.textContent = '00';
+            });
+            timeHours.forEach((elem) => {
+                elem.textContent = '00';
+            });
+
+            timeMinutes.forEach((elem) => {
+                elem.textContent = '00';
+            });
+
+            timeSeconds.forEach((elem) => {
+                elem.textContent = '00';
+            });
         }
     };
-
     updateClock();
     interval = setInterval(updateClock, 1000);
 };
