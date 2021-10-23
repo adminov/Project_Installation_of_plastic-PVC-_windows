@@ -41,13 +41,12 @@ const sendForm = () => {
 
         form.addEventListener('submit', (event) => {
             event.preventDefault();
-            const tmpCalcTotal = calcTotal.getAttributeNames()[0];
             const formData = new FormData(form);
             let body = {};
             formData.forEach((val, key) => {
                 body[key] = val;
             });
-            body[tmpCalcTotal] = calcTotal.value;
+            body['name'] = calcTotal.value;
 
             if (body.fio === '' || body.phone === '') {
                 alert('Введите данные')

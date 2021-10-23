@@ -6,7 +6,6 @@ import modalCallMeasurer from "./modules/modalCallMeasurer";
 import countTimer from "./modules/countTimer";
 import validateInputs from "./modules/validateInputs";
 import scrollUp from "./modules/scrollUp";
-import calc from "./modules/calc";
 import sendForm from "./modules/sendForm";
 
 
@@ -17,5 +16,4 @@ modalCallMeasurer();
 countTimer();
 validateInputs();
 scrollUp();
-calc();
 sendForm();

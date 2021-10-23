@@ -34,7 +34,7 @@ const validateInputs = () => {
         el.addEventListener('blur', () => {
             trim(el);
             el.value = capitalize(el);
-            controlInputs(el, /[A-Za-zА-Яа-яЁё]{2,}/gi);
+            controlInputs(el, /[A-Za-zА-Яа-яЁё]{2,}/g);
         })
     });
 
