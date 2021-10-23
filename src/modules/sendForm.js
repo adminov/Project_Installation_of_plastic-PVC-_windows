@@ -31,7 +31,8 @@ const sendForm = () => {
 
     const processingForm = idForm => {
         const form = document.getElementById(idForm);
-        const calcTotal = document.getElementById('calc-total');
+        let calcTotal = 0;
+            calcTotal= document.getElementById('calc-total');
         const statusMessage = document.createElement('div');
         const img = document.createElement('img');
 
@@ -46,7 +47,12 @@ const sendForm = () => {
             formData.forEach((val, key) => {
                 body[key] = val;
             });
-            body['name'] = calcTotal.value;
+            // body['name'] = calcTotal;
+           if (calcTotal == null){
+               body['calcTotal'] = calcTotal;
+           } else if (calcTotal.value){
+               body['calcTotal'] = calcTotal.value;
+           }
 
             if (body.fio === '' || body.phone === '') {
                 alert('Введите данные')

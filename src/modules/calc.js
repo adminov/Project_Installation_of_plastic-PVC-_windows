@@ -1,12 +1,11 @@
 'use strict';
+const calc = () => {
     const calcBlock = document.getElementById('calc');
 
     const calcType = document.getElementById('calc-type'),
         calcTypeMaterial = document.getElementById('calc-type-material'),
         calcInput = document.getElementById('calc-input'),
         calcTotal = document.getElementById('calc-total');
-
-
 
     const countSum = () => {
         let total = 0;
@@ -15,7 +14,7 @@
             calcTypeMaterialVal = calcTypeMaterial.value,
             calcInputVal = +calcInput.value;
 
-        if (calcTypeVal && calcTypeMaterialVal) {
+        if (calcTypeVal || calcTypeMaterialVal) {
             total = calcInputVal * calcTypeVal * calcTypeMaterialVal;
         }
 
@@ -28,3 +27,7 @@
             countSum();
         }
     });
+
+};
+
+calc();
