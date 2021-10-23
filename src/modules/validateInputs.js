@@ -42,7 +42,7 @@ const validateInputs = () => {
     formPhone.forEach(el => {
         el.addEventListener('blur', () => {
             trim(el);
-            controlInputs(el, /\+(\d){6,16}$/g);
+            controlInputs(el, /\+?(\d){2,16}$/g);
         })
     });
 };
