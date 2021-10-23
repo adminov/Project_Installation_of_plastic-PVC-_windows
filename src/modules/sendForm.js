@@ -23,6 +23,7 @@ const sendForm = () => {
         const successError = document.querySelector('.successError');
         setTimeout(() => {
             successError.remove();
+            document.querySelector('.overlay').style.display = 'none';
             document.querySelector('.overlayTwo').style.display = 'none';
         }, 2000);
     };
@@ -30,6 +31,7 @@ const sendForm = () => {
 
     const processingForm = idForm => {
         const form = document.getElementById(idForm);
+        const calcTotal = document.getElementById('calc-total');
         const statusMessage = document.createElement('div');
         const img = document.createElement('img');
 
@@ -39,11 +41,13 @@ const sendForm = () => {
 
         form.addEventListener('submit', (event) => {
             event.preventDefault();
+            const tmpCalcTotal = calcTotal.getAttributeNames()[0];
             const formData = new FormData(form);
             let body = {};
             formData.forEach((val, key) => {
                 body[key] = val;
             });
+            body[tmpCalcTotal] = calcTotal.value;
 
             if (body.fio === '' || body.phone === '') {
                 alert('Введите данные')
