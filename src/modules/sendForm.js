@@ -56,7 +56,7 @@ const sendForm = () => {
            // }
 
             if (body.fio === '' || body.phone === '') {
-                alert('Введите данные')
+                alert('Введите данные');
             } else {
                 statusMessage.textContent = loadMessage;
                 img.src = loadImg;

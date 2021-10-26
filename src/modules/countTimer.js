@@ -1,4 +1,4 @@
-const countTimer = (deadLine = '25 October 2021') => {
+const countTimer = (deadLine = '28 October 2021') => {
     const timeDay = document.querySelectorAll('.count_1 span'),
         timeHours = document.querySelectorAll('.count_2 span'),
         timeMinutes = document.querySelectorAll('.count_3 span'),

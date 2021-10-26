@@ -7,6 +7,9 @@ import countTimer from "./modules/countTimer";
 import validateInputs from "./modules/validateInputs";
 import scrollUp from "./modules/scrollUp";
 import imgZoom from "./modules/imgZoom";
+
+import sliderOurServices from "./modules/sliderOurServices";
+import comments from "./modules/comments";
 import sendForm from "./modules/sendForm";
 
 
@@ -18,4 +21,7 @@ countTimer();
 validateInputs();
 scrollUp();
 imgZoom();
+sliderOurServices();
+
+comments();
 sendForm();
