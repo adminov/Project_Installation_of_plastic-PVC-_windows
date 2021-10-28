@@ -9,7 +9,7 @@ import scrollUp from "./modules/scrollUp";
 import imgZoom from "./modules/imgZoom";
 
 import sliderOurServices from "./modules/sliderOurServices";
-import comments from "./modules/comments";
+
 import sendForm from "./modules/sendForm";
 
 
@@ -23,5 +23,4 @@ scrollUp();
 imgZoom();
 sliderOurServices();
 
-comments();
 sendForm();
